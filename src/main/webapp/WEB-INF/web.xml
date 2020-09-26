@@ -1,0 +1,44 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Crud</display-name>
+
+  <servlet>
+  	<servlet-name>UserController</servlet-name>
+  	<display-name>UserController</display-name>
+  	<description></description>
+  	<servlet-class>controllers.UserController</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>ProviderController</servlet-name>
+  	<display-name>ProviderController</display-name>
+  	<description></description>
+  	<servlet-class>controllers.ProviderController</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>ProductController</servlet-name>
+  	<display-name>ProductController</display-name>
+  	<description></description>
+  	<servlet-class>controllers.ProductController</servlet-class>
+  </servlet>
+  
+
+   <servlet-mapping>
+  	<servlet-name>UserController</servlet-name>
+  	<url-pattern>/UserController</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+  	<servlet-name>ProviderController</servlet-name>
+  	<url-pattern>/ProviderController</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+  	<servlet-name>ProductController</servlet-name>
+  	<url-pattern>/ProductController</url-pattern>
+  </servlet-mapping>
+</web-app>
